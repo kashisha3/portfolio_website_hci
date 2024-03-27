@@ -1,0 +1,93 @@
+body{
+    background-color: #FFF7F1;
+}
+
+nav{
+    background-color: #FFF7F1;
+}
+
+.profile_button{
+    background-color: #476865;
+    color: white;
+    width: 80px;
+}
+
+.profile_pic{
+    border-radius: 50%;
+    height: 220px;
+    width: 250px;
+    padding: 20px;
+}
+
+.profile_container{
+    justify-content: center;
+    display: flex;
+    background-color: #FFF7F1;
+    height: 650px;
+}
+
+.col-sm{
+    background-color: #FFF7F1;
+}
+
+.description{
+    text-align: center;
+    color: #9F4A56;
+    font-size: 1.2 rem;
+}
+
+.links{
+    text-decoration: none;
+    color: #9F4A56;
+}
+
+.linkss{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* .col.contact_container_2{
+    margin-top: 10px;
+    padding-top: 10px;
+    justify-content: center;
+} */
+
+.col.contact_container_1
+{
+    width: 30%;  
+    float:left;
+    padding-left: 40px;
+}
+
+.contact_img{
+    padding-left: 70px;
+    padding-top: 40px;
+}
+
+.col.contact_container_2
+{
+    width: 30%; 
+    float:right;
+}
+
+.form_contents{
+    padding-left: 200px;
+    padding-top: 50px;
+}
+
+.contact_heading{
+    margin-top: 50px;
+    text-align: center;
+    color: #9F4A56;
+}
+
+/*
+.contact_fields{
+    background-color: #53706d;
+    height: 10px;
+    width: 50px;
+} */
+
+.contact_fields_text{
+    color: grey;
+}
