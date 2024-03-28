@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="new_login_css.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@2.0.1/dist/css/multi-select-tag.css">
+    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@2.0.1/dist/js/multi-select-tag.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section"></div>
+        <div class="right-section">
+            <div class="login-container">
+                <form class="login-form">
+                    <h2 class="login-title"><i class="fas fa-user-circle"></i> Login/Sign-Up</h2>
+                    <div class="form-control">
+                        <i class="fas fa-user icon"></i>
+                        <input type="text" placeholder="Username" id="username" required>
+                    </div>
+                    <div class="form-control">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <select placeholder="Skills" name="skills" id="skills" multiple>
+                            <option value="1">Communication</option>
+                            <option value="2">UI/UX development</option>
+                            <option value="3">Problem Solving</option>
+                            <option value="4">Flutter</option>
+                            <option value="5">Web Development</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <i class="fa fa-envelope"></i>
+                        <input type="text" placeholder="Email" id="email" required>
+                    </div>
+                    <div class="form-control">
+                        <i class="fas fa-lock icon"></i>
+                        <input type="password" placeholder="Password" id="password" >
+                    </div>
+                    <!-- <div class="remember-me">
+                        <input type="checkbox" id="rememberMe" class="checkbox-input">
+                        <span class="checkbox-custom"></span>
+                        <label for="rememberMe">Remember me</label>
+                    </div> -->
+                    
+                    <!-- <div class="social-login">
+                        <i class="fab fa-google social-icon"></i>
+                        <i class="fab fa-facebook-f social-icon"></i>
+                        <i class="fab fa-twitter social-icon"></i>
+                    </div> -->
+                    <button type="submit" id="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+        import{getDatabase, ref, set, get, child} from "https://www.gstatic.com/firebasejs/10.9.0/firebase-database.js";
+            
+          
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+              apiKey: "AIzaSyDHEuJAe5D4YqaRUn30j3P-r-KyhAAqMTA",
+              authDomain: "hci-portfolio-6fc06.firebaseapp.com",
+              projectId: "hci-portfolio-6fc06",
+              storageBucket: "hci-portfolio-6fc06.appspot.com",
+              messagingSenderId: "904581670232",
+              appId: "1:904581670232:web:30fe5d59df27898823f12d"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+
+   //get ref to database services
+             const db = getDatabase(app);
+
+             document.getElementById("submit").addEventListener('click', function(e){
+              e.preventDefault();
+              set(ref(db, 'user/' + document.getElementById("username").value),
+              {
+   
+                username: document.getElementById("username").value,
+                email: document.getElementById("email").value,
+                Password: document.getElementById("password").value,
+                Skills: document.getElementById("skills").value
+
+              });
+                alert("Login Sucessfull !");
+             })
+    </script>
+</body>
+</html>
+
+<script src="./index.js"></script>

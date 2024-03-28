@@ -17,29 +17,39 @@
                         <span>E-mail</span>
                     </div>
                     <div class="inputbox">
+                        <input type="password" value="" id="password" required>
+                        <span>password</span>
+                    </div>
+                    <div class="inputbox">
                         <input type="text" value="" id="phone" required>
                         <span>Phone Number</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" value="" id="skills" required>
+                        <span>Add your skills (separated with comma)</span>
                     </div>
                     <input type="submit" value="submit" class="sub" id="submit">
                 </form>
             </div>
         </div>
-        <script type="module">
-               // Import the functions you need from the SDKs you need
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
-            import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
-  
-  // Your web app's Firebase configuration
-            const firebaseConfig = {
-              apiKey: "AIzaSyAkPgAR0Hs6v5oNlmxYxI2OGh-S8YA2OWU",
-              authDomain: "creativetutorial-43ba7.firebaseapp.com",
-              projectId: "creativetutorial-43ba7",
-              storageBucket: "creativetutorial-43ba7.appspot.com",
-              messagingSenderId: "52869654198",
-              appId: "1:52869654198:web:0a19740d1f26ade1066817"
-            };
 
-  // Initialize Firebase
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+            import{getDatabase, ref, set, get, child} from "https://www.gstatic.com/firebasejs/10.9.0/firebase-database.js";
+            
+          
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+              apiKey: "AIzaSyDHEuJAe5D4YqaRUn30j3P-r-KyhAAqMTA",
+              authDomain: "hci-portfolio-6fc06.firebaseapp.com",
+              projectId: "hci-portfolio-6fc06",
+              storageBucket: "hci-portfolio-6fc06.appspot.com",
+              messagingSenderId: "904581670232",
+              appId: "1:904581670232:web:30fe5d59df27898823f12d"
+            };
+          
+            // Initialize Firebase
             const app = initializeApp(firebaseConfig);
 
    //get ref to database services
@@ -52,11 +62,15 @@
    
                 username: document.getElementById("username").value,
                 email: document.getElementById("email").value,
+                Password: document.getElementById("password").value,
                 PhoneNumber: document.getElementById("phone").value
 
               });
                 alert("Login Sucessfull  !");
              })
-        </script>
+          
+          </script>
+
+
     </body>
 </html>

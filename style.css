@@ -91,3 +91,141 @@ nav{
 .contact_fields_text{
     color: grey;
 }
+
+
+
+
+
+.h1_gradient{
+    font-weight: 700;
+    background: linear-gradient(91deg, #5EAACA 0%, rgba(204, 48, 76, 0.85) 33.33%, #2A69F2 66.67%, rgba(38, 217, 77, 0.90) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width : 1280px) {
+    .col_FAQ{
+        /* background-color: rgb(210, 205, 199); */
+        width:45%;
+        min-height: 100px;
+        overflow: hidden;
+        border-radius: 10px;
+        font-weight: 500;
+        padding: 10px 20px;
+        margin: 0px 10px;
+        margin-right: 20px;
+        font-size: 20px;
+        display:inline-block;
+        box-shadow: 5px 5px 5px 5px rgb(160, 166, 167);
+    }
+    
+    
+    .subscribe_search{
+        box-shadow: 2px 2px 2px 2px;
+        border-width: medium;
+        border-radius: 5px;
+        width: 200px;
+        text-align: center;
+    }
+    
+    
+    #FAQ_button{
+        border-radius: 5px;
+    }
+    
+    
+    .FAQ_list{
+        list-style: none;
+    }
+    
+    
+    .content{
+        display: none;
+        font-size: 0.8em;
+    }
+    .collapsible_div{
+        cursor: pointer;
+        font-weight: 700;
+    }
+    
+    
+    .main_container{
+        padding: 10px 20px;
+        width:100%;
+    }
+    .container_row{
+        width:100%;
+        padding:15px 20px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    
+
+.col_FAQ{
+    /* background-color: rgb(210, 205, 199); */
+    width:100%;
+    min-height: 70px;
+    overflow: hidden;
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 10px 20px;
+    margin: 0px 10px;
+    font-size: 0.rem;
+    margin-top: 10px;
+    box-shadow: 5px 5px rgb(160, 166, 167);
+}
+
+.col_FAQ h4{
+    font-size: 0.9rem;
+}
+
+.subscribe_search{
+    box-shadow: 2px 2px 2px 2px;
+    border-width: medium;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+
+
+#FAQ_button{
+    border-radius: 5px;
+}
+
+
+.FAQ_list{
+    list-style: none;
+}
+
+
+.content{
+    display: none;
+    font-size: 0.8em;
+}
+.collapsible_div{
+    cursor: pointer;
+    font-weight: 700;
+}
+
+
+.main_container{
+    padding: 10px 20px;
+    width:100%;
+}
+.container_row{
+    width:100%;
+    padding:15px 20px;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+}
+}
+
+.welcome_img{
+    opacity: 30%;
+}
