@@ -45,4 +45,32 @@ function modalClick(id) {
       });
     });
   }
+
+function initializeContactButtons() {
+    const contactButtons = document.querySelectorAll('.contact_button');
+    const privacyStatus = document.querySelectorAll('.privacy_status');
+
+    contactButtons.forEach((button, index) => {
+        button.addEventListener('click', function() {
+            const userName = button.getAttribute('data-user');
+            const isPrivate = privacyStatus[index].textContent === 'Private';
+
+            if (isPrivate) {
+                // User's portfolio is private, allow recruiter to contact
+                const confirmation = confirm(`Do you want to allow recruiter to contact ${userName}?`);
+                if (confirmation) {
+                    alert(`You allowed recruiter to contact ${userName}`);
+                } else {
+                    alert(`You denied access to the recruiter for contacting ${userName}`);
+                }
+            } else {
+                alert(`Recruiter can view and contact ${userName}`);
+            }
+        });
+    });
+}
+
+
+
+
  

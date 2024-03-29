@@ -46,8 +46,11 @@ body {
     color: #027186;
 }
 
+
+
+
 .form-control {
-    position: relative;
+    position: relative; 
     margin-bottom: 30px;
 }
 
@@ -76,7 +79,7 @@ body {
 
 .form-control input:invalid:not(:focus):not(:placeholder-shown) {
     border: 2px solid #ff3860;
-}
+} 
 
 .remember-me {
     display: flex;

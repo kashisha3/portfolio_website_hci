@@ -10,6 +10,8 @@ nav{
     background-color: #476865;
     color: white;
     width: 80px;
+    border-radius: 10px;
+    
 }
 
 .profile_pic{
@@ -229,3 +231,59 @@ nav{
 .welcome_img{
     opacity: 30%;
 }
+
+
+
+.blurred {
+    filter: blur(5px);
+    pointer-events: none;
+}
+
+.privacy_button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.privacy_label {
+    font-size: 18px;
+    color: #ac2ff4;
+    margin-left: 10px; 
+}
+
+.container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.option {
+    margin-bottom: 10px;
+}
+
+input[type="password"] {
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+button.rounded-button {
+    background-color: #476865;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
