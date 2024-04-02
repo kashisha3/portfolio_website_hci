@@ -6,7 +6,122 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      /* Style for the section containing the image and text */
+      #About_portfolio {
+          position: relative; /* Position relative to allow absolute positioning of text */
+          text-align: center; /* Center align text */
+      }
 
+      /* Style for the image */
+      .welcome_img {
+          width: 100%; /* Make the image cover the entire width */
+          height: auto; /* Maintain aspect ratio */
+          display: block; /* Ensure proper rendering as a block element */
+          opacity: 30%; /* Reduce opacity for better visibility of text */
+      }
+
+      /* Style for the text inside the list items */
+      #About_portfolio p {
+          list-style: none; /* Remove default list styles */
+          position: absolute; /* Position text absolutely */
+          /* Position text horizontally centered */
+        /* Center text both vertically and horizontally */
+          padding: 0; /* Remove default padding */
+          margin: 0; /* Remove default margin */
+          color: rgb(8, 8, 8); /* Set text color to white for better visibility */
+          
+      }
+      #About_portfolio ol {
+          list-style: none; /* Remove default list styles */
+          position: absolute; /* Position text absolutely */
+          top: 50%; /* Position text vertically centered */
+          left: 10px; /* Position text horizontally centered */
+          transform: translateY(-50%); /* Center text both vertically and horizontally */
+          padding: 0; /* Remove default padding */
+          margin: 0; /* Remove default margin */
+          color: rgb(8, 8, 8); /* Set text color to white for better visibility */
+          display: grid; /* Use CSS Grid for layout */
+          grid-template-columns: repeat(2, 1fr); /* Two columns */
+          grid-gap: 10px; /* Gap between grid items */
+          counter-reset: item;
+      }
+      /* Style for individual list items */
+      #About_portfolio ol li {
+            counter-increment: item; /* Increment the counter for each list item */
+            background: linear-gradient(40deg, var(--secondary), transparent);
+            padding: .8rem 1rem;
+            margin: 1rem 0;
+            display: flex; /* Use flexbox for alignment */
+            box-shadow: 0 .08rem #444;
+            transition: .3s;
+        }
+        #About_portfolio ol li:hover{
+          /* box-shadow: 0 .08rem var(--text); */
+          filter: brightness(85%);
+        }
+        #About_portfolio ol li p {
+          position: relative;
+          left: -3rem;
+          transition: .3s;
+
+
+
+        }
+        #About_portfolio ol li:hover p{
+          left: 0rem;
+
+        }
+        
+
+        /* Style for the counter */
+        #About_portfolio ol li::before {
+
+            content: counter(item, decimal-leading-zero); /* Display the counter */
+            margin-right: 5px; /* Add spacing between counter and text */
+            font: bold 3rem "poppins", sand-serif;
+            background:linear-gradient(to top, pink, brown, crimson);
+            color:transparent;
+            -webkit-background-clip: text;
+            background-attachment: fixed;
+            opacity: .1;
+            transition: .5s;
+          }
+          #About_portfolio ol li:hover::before{
+            opacity: 10;
+          }
+
+
+
+      /* Style for the navigation bar */
+      nav {
+          position: fixed; /* Fixed position to keep it always visible */
+          top: 0; /* Align to the top */
+          left: 0; /* Align to the left */
+          width: 100%; /* Occupy full width */
+          background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+          z-index: 1000; /* Ensure the navigation bar appears above other content */
+          opacity: 50%;
+      }
+
+      /* Style for the navigation links */
+      nav ul {
+          list-style: none; /* Remove default list styles */
+          margin: 0; /* Remove default margin */
+          padding: 0; /* Remove default padding */
+          text-align: center; /* Center align navigation links */
+      }
+
+      nav ul li {
+          display: inline; /* Display navigation items inline */
+          margin: 0 10px; /* Add spacing between navigation items */
+      }
+
+      nav ul li a {
+          color: white; /* Set text color to white */
+          text-decoration: none; /* Remove underline from links */
+      }
+  </style>
 </head>
 <body>
     <!-- <nav style="height: 80px;">
@@ -15,10 +130,42 @@
 
         </ul>
     </nav> -->
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Sample Portfolios</a></li>
+      <li><a href="#">FAQs</a></li>
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Login/Signup</a></li>
+  </ul>
 
     <section id="About_portfolio">
         
-        <img class="welcome_img" src="https://qodeinteractive.com/magazine/wp-content/uploads/2019/06/The-7-Elements-Every-Great-Portfolio-Website-Needs-Featured-Img.jpg" alt="" width="100%">
+        <img class="welcome_img" src="https://qodeinteractive.com/magazine/wp-content/uploads/2019/06/The-7-Elements-Every-Great-Portfolio-Website-Needs-Featured-Img.jpg" alt="" >
+        <p>Crafting a great portfolio is like painting a picture of your career journey. Each piece you choose to include tells a story about your skills and dreams. With our web app, making your portfolio shine is easy. It's like having a personal coach guiding you through the process, helping you create a portfolio that stands out and gets you noticed. Welcome to the easiest way to showcase your talents and land your dream job!</p> 
+        <ol>
+          <li>
+            
+            <p>Show Off Your Skills in Style: Upload your work and make it shine! Our platform helps you showcase your talents in a way that grabs attention and gets you noticed.</p>
+
+          </li>
+          <li>
+            <p>Find Inspiration Easily: Need ideas? Explore other people's portfolios for inspiration. Whether you're into design, marketing, or something else, you'll find plenty of examples to spark your creativity.</p>
+
+          </li>
+          <li>
+            <p>Pick Your Perfect Template: No more boring templates! Choose from a bunch of cool designs that fit your style and profession. It's like having a personal designer at your fingertips.</p>
+
+          </li>
+          <li>
+            <p>Recruiters, We've Got You Covered: Looking to hire? Our app makes it easy to find the right candidates. Search based on skills, browse portfolios, and reach out with just a click. Hiring has never been this simple!</p>
+
+          </li>
+          <li>
+            <p>Get Expert Tips: Need a little help? We've got your back. Get personalized tips and tricks to make your portfolio stand out from the crowd. With our guidance, you'll be unstoppable.</p>
+
+          </li>
+
+        </ol>
     </section>
 
     <section id="portfolios">

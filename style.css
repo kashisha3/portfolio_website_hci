@@ -5,7 +5,9 @@ body{
 nav{
     background-color: #FFF7F1;
 }
-
+.welcome_img{
+    background-image:"https://qodeinteractive.com/magazine/wp-content/uploads/2019/06/The-7-Elements-Every-Great-Portfolio-Website-Needs-Featured-Img.jpg";
+}
 .profile_button{
     background-color: #476865;
     color: white;
@@ -228,9 +230,10 @@ nav{
 }
 }
 
-.welcome_img{
+/* .welcome_img{
     opacity: 30%;
-}
+    
+} */
 
 
 
