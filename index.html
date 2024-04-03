@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolify</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-</head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  </head>
 <body>
     <!-- <nav style="height: 80px;">
         <ul style="list-style: none;">
@@ -15,19 +18,62 @@
 
         </ul>
     </nav> -->
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sample Portfolios</a></li>
+        <li><a href="#faqs">FAQs</a></li>
+        <li><a href="./new_login.html">Login/Signup</a></li>
+    </ul>
+    </nav>
 
-    <section id="About_portfolio">
-        
-        <img class="welcome_img" src="https://qodeinteractive.com/magazine/wp-content/uploads/2019/06/The-7-Elements-Every-Great-Portfolio-Website-Needs-Featured-Img.jpg" alt="" width="100%">
+    <section class="About_portfolio">
+
+      <video playsinline autoplay muted loop>
+        <source src="./images/Company.mp4" type="video/mp4" >
+       Your browser does not support the video tag. I suggest you upgrade your browser.
+   </video>
+
+   <div class="overlay">
+    <!-- <p>Crafting a great portfolio is like painting a picture of your career journey. Each piece you choose to include tells a story about your skills and dreams. With our web app, making your portfolio shine is easy. It's like having a personal coach guiding you through the process, helping you create a portfolio that stands out and gets you noticed. Welcome to the easiest way to showcase your talents and land your dream job!</p>  -->
+        <ol>
+          <li>
+            
+            <p>Show Off Your Skills in Style: Upload your work and make it shine! Our platform helps you showcase your talents in a way that grabs attention and gets you noticed.</p>
+
+          </li>
+          <li>
+            <p>Find Inspiration Easily: Need ideas? Explore other people's portfolios for inspiration. Whether you're into design, marketing, or something else, you'll find plenty of examples to spark your creativity.</p>
+
+          </li>
+          <li>
+            <p>Pick Your Perfect Template: No more boring templates! Choose from a bunch of cool designs that fit your style and profession. It's like having a personal designer at your fingertips.</p>
+
+          </li>
+          <li>
+            <p>Recruiters, We've Got You Covered: Looking to hire? Our app makes it easy to find the right candidates. Search based on skills, browse portfolios, and reach out with just a click. Hiring has never been this simple!</p>
+
+          </li>
+          <li>
+            <p>Get Expert Tips: Need a little help? We've got your back. Get personalized tips and tricks to make your portfolio stand out from the crowd. With our guidance, you'll be unstoppable.</p>
+
+          </li>
+
+        </ol>
+  </div>
+
+        <br>
     </section>
 
     <section id="portfolios">
         <div class="profile_container">
-            <div class="row">
-                <div class="col-sm">
+            <div class="row" style="background-color: #240A34;">
+              <br>
+              <br>
+                <div class="col-sm" style="background-color: #113946;">
                     <img class="profile_pic" src="./images/image 8.png" alt="">
                     <p class ="description"><b><u><a class="links" href="./login.html" target="_blank">Drishti Anand</a></u></b> </p>
-                    <ul style="margin-left: 40px;">
+                    <ul class="portfolio_skills_name">
                         <li>Tech Enthusiast</li>
                         <li>Flutter Developer</li>
                         <li>Creative</li>
@@ -35,10 +81,10 @@
                         <button class="profile_button"><a class="linkss" href="./contact_us.html" target="_blank">Contact</a></button>
                     </ul>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm" style="background-color: #113946;">
                     <img class="profile_pic" src="./images/image 7.png" alt="">
                     <p class ="description"><b><u><a class="links" href="https://kashisha3.github.io/Portfolio-Website/" target="_blank">Kashish Arora</a></u></b></p>
-                    <ul style="margin-left: 40px;">
+                    <ul class="portfolio_skills_name">
                         <li>Tech Enthusiast</li>
                         <li>Flutter Developer</li>
                         <li>Creative</li>
@@ -46,10 +92,10 @@
                         <button class="profile_button"><a class="linkss" href="./contact_us.html" target="_blank">Contact</a></button>
                     </ul>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm" style="background-color: #113946;">
                     <img class="profile_pic" src="./images/Rectangle.png" alt="">
                     <p class ="description"><b><u><a class="links" href="#">Liza</a></u></b> </p>
-                    <ul style="margin-left: 40px;">
+                    <ul class="portfolio_skills_name">
                         <li>Tech Enthusiast</li>
                         <li>Flutter Developer</li>
                         <li>Creative</li>
@@ -63,6 +109,26 @@
             </div>        
         </div>
     </section>
+
+    <!-- <section id="help">
+      <div style="width: 100%;">
+        <div style="width: 50%; height: 500px; float: left; background: green;"> 
+            <h2 style="color: bisque;" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="100">Stuck Somewhere?? &#128534;</h2>
+            <h2 style="color: bisque;" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="200">Not knowing how to proceed with website?? &#128533;</h2>
+            <h2 style="color: bisque;" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="300">Need help with your portfolio?? &#128531;</h2>
+            <br>
+            <h1 style="color: bisque; text-align: center;" data-aos="fade-up" data-aos-anchor-placement="bottom-center" data-aos-delay="700">LET US HELP YOU &#128515;</h1>
+            <br>
+
+            <h4 data-aos="fade-up" data-aos-anchor-placement="bottom-center" data-aos-delay="700">Contact us and let us know your queries and doubts and we will there to help you.</h4>
+            <br>
+            <button style="text-align: center; margin: 0 auto; display: block;" data-aos="fade-up" data-aos-anchor-placement="bottom-center" data-aos-delay="700">CONTACT US</button>
+        </div>
+        <div style="margin-left: 50%; height: 500px; background: blue;"> 
+            <img src="./images/undraw_Taking_notes_re_bnaf.png" alt="" height="500px">
+        </div>
+    </div>
+    </section> -->
 
     <section id="faqs">
         <h1 class="h1_gradient" style="padding-left: 50px; padding-top: 25px;"><span data-aos="flip-down" data-aos-delay="250">Frequently Asked Question</span> <span data-aos="fade-down" data-aos-delay="500">?</span> <span data-aos="flip-down" data-aos-delay="800">?</span> </h1>
@@ -147,24 +213,6 @@
 
     </div>
     </section>
-
-    <section id="help">
-
-    </section>
-
-    <!-- <footer class="footer">
-
-        <div class="footer-header">You can contact me through</div>
-        <br>
-        <ul class="social-links list-non-bullet">
-            <li class="list-item-inline"> <a class="link" href="/"> <i class="fa-regular fa-envelope"></i> email </a></li>
-            <li class="list-item-inline"> <a class="link" href="https://www.linkedin.com/in/kashish-arora-a9a84323a/"> <i class="fa-brands fa-linkedin"></i> LinkedIn </a></li>
-            <li class="list-item-inline"> <a class="link" href="https://twitter.com/kashish_ar_03"> <i class="fa-brands fa-twitter"></i> Twitter </a></li>
-            <li class="list-item-inline"> <a class="link" href="https://github.com/kashisha3"> <i class="fa-brands fa-github"></i> Github </a></li>
-        </ul>
-        
-    </footer> -->
-
     
 </body>
 </html>
