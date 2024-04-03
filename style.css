@@ -2,12 +2,41 @@ body{
     background-color: #FFF7F1;
 }
 
-nav{
-    background-color: #FFF7F1;
-}
-.welcome_img{
-    background-image:"https://qodeinteractive.com/magazine/wp-content/uploads/2019/06/The-7-Elements-Every-Great-Portfolio-Website-Needs-Featured-Img.jpg";
-}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  
+  .overlay {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .overlay h2 {
+      background: #000 none repeat scroll 0 0;
+      color: tan;
+      font-weight: 600;
+      margin: 2rem 3rem 0;
+      mix-blend-mode: overlay;
+      padding: 5px 15px;
+      text-align: center;
+  }
+
 .profile_button{
     background-color: #476865;
     color: white;
@@ -36,13 +65,13 @@ nav{
 
 .description{
     text-align: center;
-    color: #9F4A56;
+    color: #BCA37F;
     font-size: 1.2 rem;
 }
 
 .links{
     text-decoration: none;
-    color: #9F4A56;
+    color: #BCA37F;
 }
 
 .linkss{
@@ -85,6 +114,12 @@ nav{
     color: #9F4A56;
 }
 
+.portfolio_skills_name{
+    margin-left: 40px; 
+    color: #FFEDD8;
+
+}
+
 /*
 .contact_fields{
     background-color: #53706d;
@@ -96,9 +131,9 @@ nav{
     color: grey;
 }
 
-
-
-
+.profile_container{
+    background-color: #113946;
+}
 
 .h1_gradient{
     font-weight: 700;
@@ -290,3 +325,123 @@ button.rounded-button {
     cursor: pointer;
 }
 
+
+
+
+/* Style for the section containing the image and text */
+.About_portfolio {
+    position: relative; /* Position relative to allow absolute positioning of text */
+    text-align: center; /* Center align text */
+}
+
+/* Style for the image */
+.welcome_img {
+    width: 100%; /* Make the image cover the entire width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure proper rendering as a block element */
+    opacity: 30%; /* Reduce opacity for better visibility of text */
+}
+
+/* Style for the text inside the list items */
+.About_portfolio p {
+    /* list-style: none; Remove default list styles */
+    position: relative; /* Position text absolutely */
+    /* Position text horizontally centered */
+  /* Center text both vertically and horizontally */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    color: rgb(255, 255, 255); /* Set text color to white for better visibility */
+    
+}
+.About_portfolio ol {
+    list-style: none; /* Remove default list styles */
+    position: absolute; /* Position text absolutely */
+    top: 50%; /* Position text vertically centered */
+    left: 10px; /* Position text horizontally centered */
+    transform: translateY(-50%); /* Center text both vertically and horizontally */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    color: rgb(8, 8, 8); /* Set text color to white for better visibility */
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-gap: 10px; /* Gap between grid items */
+    counter-reset: item;
+}
+/* Style for individual list items */
+.About_portfolio ol li {
+      counter-increment: item; /* Increment the counter for each list item */
+      background: linear-gradient(40deg, var(--secondary), transparent);
+      padding: .8rem 1rem;
+      margin: 1rem 0;
+      display: flex; /* Use flexbox for alignment */
+      box-shadow: 0 .08rem #444;
+      transition: .3s;
+  }
+  .About_portfolio ol li:hover{
+    /* box-shadow: 0 .08rem var(--text); */
+    filter: brightness(85%);
+  }
+  .About_portfolio ol li p {
+    position: relative;
+    left: -3rem;
+    transition: .3s;
+
+
+
+  }
+  .About_portfolio ol li:hover p{
+    left: 0rem;
+
+  }
+  
+
+  /* Style for the counter */
+  .About_portfolio ol li::before {
+
+      content: counter(item, decimal-leading-zero); /* Display the counter */
+      margin-right: 5px; /* Add spacing between counter and text */
+      font: bold 3rem "poppins", sand-serif;
+      background:linear-gradient(to top, pink, brown, crimson);
+      color:transparent;
+      -webkit-background-clip: text;
+      background-attachment: fixed;
+      opacity: .1;
+      transition: .5s;
+    }
+    .About_portfolio ol li:hover::before{
+      opacity: 10;
+    }
+
+
+
+/* Style for the navigation bar */
+nav {
+    position: fixed; /* Fixed position to keep it always visible */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Occupy full width */
+    background-color: rgb(0, 0, 0); /* Transparent black background */
+    z-index: 1000; /* Ensure the navigation bar appears above other content */
+    opacity: 50%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* Style for the navigation links */
+nav ul {
+    list-style: none; /* Remove default list styles */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    text-align: center; /* Center align navigation links */
+}
+
+nav ul li {
+    display: inline; /* Display navigation items inline */
+    margin: 0 30px; /* Add spacing between navigation items */
+    font-size: 0.5cm;
+}
+
+nav ul li a {
+    color: #ffffff; /* Set text color to white */
+    text-decoration: none; /* Remove underline from links */
+}
