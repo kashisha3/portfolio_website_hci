@@ -1,3 +1,4 @@
+
 body{
     background-color: #FFF7F1;
 }
@@ -262,6 +263,7 @@ video {
 .row{
     display: flex;
     flex-direction: column;
+
 }
 }
 
