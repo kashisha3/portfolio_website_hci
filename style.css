@@ -327,8 +327,12 @@ button.rounded-button {
     cursor: pointer;
 }
 
+#templates{
+    background-color: #275d57;
+    padding-bottom: 50px;
+}
 
-*{
+/* *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -337,13 +341,14 @@ button.rounded-button {
 body {
     font-family: 'Outfit';
     background: linear-gradient(#000, #2e8b57);
-}
+} */
 
 .contact-container {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background-color: #135D66;
 }
 
 .contact-left {
