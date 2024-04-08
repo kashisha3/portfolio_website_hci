@@ -89,23 +89,28 @@ $(document).ready(function(){
         console.log(`Saving content for ${id}: ${content}`);
       }
     });
-  
-    document.addEventListener('DOMContentLoaded', function() {
-      // Existing JavaScript code remains unchanged
+
+    var loadFile = function (event) {
+        var image = document.getElementById("output");
+        image.src = URL.createObjectURL(event.target.files[0]);
+      };
+      
+    // document.addEventListener('DOMContentLoaded', function() {
+    //   // Existing JavaScript code remains unchanged
     
-      // Handle file upload
-      const photoUpload = document.getElementById('photo-upload');
-      const profileImage = document.getElementsByClassName('');
+    //   // Handle file upload
+    //   const photoUpload = document.getElementById('photo-upload');
+    //   const profileImage = document.getElementsByClassName('');
     
-      photoUpload.addEventListener('change', function(event) {
-        const file = event.target.files[0];
-        const reader = new FileReader();
+    //   photoUpload.addEventListener('change', function(event) {
+    //     const file = event.target.files[0];
+    //     const reader = new FileReader();
     
-        reader.onload = function(e) {
-          profileImage.src = e.target.result;
-        };
+    //     reader.onload = function(e) {
+    //       profileImage.src = e.target.result;
+    //     };
     
-        reader.readAsDataURL(file);
-      });
-    });
+    //     reader.readAsDataURL(file);
+    //   });
+    // });
     

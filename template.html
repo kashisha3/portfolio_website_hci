@@ -63,7 +63,15 @@
             <h2 class="title">About</h2>
             <div class="about-content">
                 <div class="column left">
-                  <input type="file" id="photo-upload" accept="image/*">
+                    <div class="profile-pic">
+                        <label class="-label" for="file">
+                          <span class="glyphicon glyphicon-camera"></span>
+                          <span>Change Image</span>
+                        </label>
+                        <input id="file" type="file" onchange="loadFile(event)"/>
+                        <img src="https://cdn.pixabay.com/photo/2017/08/06/21/01/louvre-2596278_960_720.jpg" id="output" width="200" />
+                    </div>
+                  <!-- <input type="file" id="photo-upload" accept="image/*">
               <img id="profile-image" src="placeholder.jpg" alt="Profile Picture" class="about-img" style="border-radius: 10px;">
               <style>
                 .about-img:hover{
@@ -74,7 +82,7 @@
               <br>
               <label for="photo-upload"></label>
                <span>Upload Photo</span>
-             </label>
+             </label> -->
                 </div>
                 <div class="column right about-img" style="padding: 20px; border-radius: 10px;">
                     <div class="text" contenteditable="true">I am  Passionate <span class="typing-2"></span></div>
@@ -228,21 +236,21 @@
             <div class="carousel owl-carousel">
                 <div class="card">
                     <div class="box">
-                        <img src="" alt="" class="about-img">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.3ZrqDEwJSRoGzS19KXhMegHaE8&pid=Api&P=0&h=180" alt="" class="about-img">
                         <div class="text" contenteditable="true">Uma Shankar</div>
                         <p contenteditable="true">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptate. Alias voluptates officiis deserunt nam, nobis quasi voluptatibus tempore exercitationem. Debitis, fuga accusamus. Autem aliquam, perspiciatis maiores quos nihil deleniti.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="" alt="" class="about-img">
+                        <img src="https://www.carvermostardi.com/cmos/wp-content/uploads/2018/05/professional_headshots_tampa_011.jpg" alt="" class="about-img">
                         <div class="text" contenteditable="true">Shaurya Guliani</div>
                         <p contenteditable="true">Very enthusiastic and hardworking person. Always looking for new challenges to overcome👍👍</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="" alt="" class="about-img">
+                        <img src="https://tse1.mm.bing.net/th?id=OIP.9oPtaexuvvh9wG20_htK5wAAAA&pid=Api&P=0&h=180" alt="" class="about-img">
                         <div class="text" contenteditable="true">Rishit Dagli</div>
                         <p contenteditable="true">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nisi ratione reiciendis, praesentium minus pariatur doloribus? Quas, possimus incidunt placeat assumenda repudiandae aut similique, vero architecto impedit, inventore ex sequi!</p>
                     </div>
